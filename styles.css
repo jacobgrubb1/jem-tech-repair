@@ -1,13 +1,14 @@
 /* ===== CSS Variables ===== */
 :root {
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
-  --primary-light: #dbeafe;
-  --secondary: #0f172a;
-  --text: #1e293b;
-  --text-light: #64748b;
+  --primary: #f58220;
+  --primary-dark: #d96d0a;
+  --primary-light: #fff3e6;
+  --secondary: #0d3b66;
+  --text: #1a2a3a;
+  --text-light: #5a7184;
+  --accent: #fdb813;
   --bg: #ffffff;
-  --bg-alt: #f8fafc;
+  --bg-alt: #f7f9fc;
   --border: #e2e8f0;
   --radius: 12px;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
@@ -127,9 +128,10 @@ img {
   gap: 6px;
 }
 
-.logo-icon {
-  color: var(--primary);
-  font-size: 1.5rem;
+.logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -174,7 +176,7 @@ img {
 /* ===== Hero ===== */
 .hero {
   padding: 140px 0 80px;
-  background: linear-gradient(135deg, #f0f5ff 0%, #e8f0fe 50%, #f8fafc 100%);
+  background: linear-gradient(135deg, #fff7ed 0%, #fef3e2 50%, #f7f9fc 100%);
   text-align: center;
 }
 
@@ -349,7 +351,7 @@ img {
 }
 
 .about-placeholder {
-  background: linear-gradient(135deg, var(--primary-light), #c7d2fe);
+  background: linear-gradient(135deg, var(--primary-light), #fde6c4);
   border-radius: var(--radius);
   height: 400px;
   display: flex;
@@ -387,7 +389,7 @@ img {
 }
 
 .stars {
-  color: #f59e0b;
+  color: var(--accent);
   font-size: 1.2rem;
   margin-bottom: 16px;
 }
@@ -571,7 +573,7 @@ img {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  box-shadow: 0 0 0 3px rgba(245, 130, 32, 0.15);
 }
 
 .form-group textarea {
