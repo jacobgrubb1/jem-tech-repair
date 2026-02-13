@@ -58,5 +58,65 @@
     "condition": "Fair",
     "category": "Laptops",
     "available": true
+  },
+  {
+    "id": "7",
+    "name": "PlayStation 5 - Disc Edition",
+    "description": "PS5 Disc Edition with one DualSense controller and power cable. Factory reset, runs perfectly. No scratches.",
+    "price": 374.99,
+    "image": "",
+    "condition": "Excellent",
+    "category": "Gaming",
+    "available": true
+  },
+  {
+    "id": "8",
+    "name": "Xbox Series X",
+    "description": "Xbox Series X 1TB with controller and HDMI cable. Fully tested, runs quiet. Great condition.",
+    "price": 349.99,
+    "image": "",
+    "condition": "Good",
+    "category": "Gaming",
+    "available": true
+  },
+  {
+    "id": "9",
+    "name": "Nintendo Switch OLED",
+    "description": "Nintendo Switch OLED model in white. Includes dock, Joy-Cons, and charger. Screen is flawless.",
+    "price": 249.99,
+    "image": "",
+    "condition": "Excellent",
+    "category": "Gaming",
+    "available": true
+  },
+  {
+    "id": "10",
+    "name": "PlayStation 4 Slim - 1TB",
+    "description": "PS4 Slim 1TB with one controller and power cable. Factory reset and cleaned. Budget-friendly gaming.",
+    "price": 179.99,
+    "image": "",
+    "condition": "Good",
+    "category": "Gaming",
+    "available": true
+  },
+  {
+    "id": "11",
+    "name": "Xbox Series S",
+    "description": "Xbox Series S 512GB digital console. Compact and quiet. Includes controller and cables.",
+    "price": 199.99,
+    "image": "",
+    "condition": "Good",
+    "category": "Gaming",
+    "available": true
+  },
+  {
+    "id": "12",
+    "name": "Nintendo Switch Lite - Gray",
+    "description": "Handheld-only Nintendo Switch Lite in gray. Perfect portable gaming. Includes charger.",
+    "price": 129.99,
+    "image": "",
+    "condition": "Fair",
+    "category": "Gaming",
+    "available": true
   }
 ]
