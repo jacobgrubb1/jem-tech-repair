@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Dell Latitude 5520 Laptop",
+    "description": "15.6\" display, Intel i5-1145G7, 16GB RAM, 256GB SSD. Fully tested and wiped. Great for work or school.",
+    "price": 279.99,
+    "image": "",
+    "condition": "Good",
+    "category": "Laptops",
+    "available": true
+  },
+  {
+    "id": "2",
+    "name": "iPhone 12 - 64GB (Unlocked)",
+    "description": "Unlocked iPhone 12 in black. Battery health 87%. Minor scratches on back, screen in great shape.",
+    "price": 219.99,
+    "image": "",
+    "condition": "Good",
+    "category": "Phones",
+    "available": true
+  },
+  {
+    "id": "3",
+    "name": "HP EliteDesk 800 G5 Desktop",
+    "description": "Intel i7-9700, 16GB RAM, 512GB SSD, Windows 11 Pro. Perfect compact office PC.",
+    "price": 329.99,
+    "image": "",
+    "condition": "Excellent",
+    "category": "Desktops",
+    "available": true
+  },
+  {
+    "id": "4",
+    "name": "Samsung Galaxy S21 - 128GB",
+    "description": "Unlocked Samsung Galaxy S21 in Phantom Gray. Great condition, includes charger.",
+    "price": 189.99,
+    "image": "",
+    "condition": "Good",
+    "category": "Phones",
+    "available": true
+  },
+  {
+    "id": "5",
+    "name": "iPad 9th Gen - 64GB WiFi",
+    "description": "10.2\" iPad in Space Gray. Perfect for browsing, streaming, and light work. Includes charger.",
+    "price": 199.99,
+    "image": "",
+    "condition": "Excellent",
+    "category": "Tablets",
+    "available": true
+  },
+  {
+    "id": "6",
+    "name": "Lenovo ThinkPad T480",
+    "description": "14\" display, Intel i5-8350U, 8GB RAM, 256GB SSD. Reliable business laptop, freshly wiped.",
+    "price": 199.99,
+    "image": "",
+    "condition": "Fair",
+    "category": "Laptops",
+    "available": true
+  }
+]
