@@ -97,6 +97,36 @@
     </div>
   </section>
 
+  <!-- Product Detail Modal -->
+  <div class="product-modal-overlay" id="productModal">
+    <div class="product-modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-content">
+        <div class="modal-gallery">
+          <div class="gallery-main">
+            <img src="" alt="" id="galleryMainImg">
+            <button class="gallery-arrow gallery-prev" id="galleryPrev">&#8249;</button>
+            <button class="gallery-arrow gallery-next" id="galleryNext">&#8250;</button>
+          </div>
+          <div class="gallery-thumbs" id="galleryThumbs"></div>
+        </div>
+        <div class="modal-details">
+          <span class="product-category" id="modalCategory"></span>
+          <h2 id="modalName"></h2>
+          <div class="product-meta">
+            <span class="product-price" id="modalPrice"></span>
+            <span class="product-condition" id="modalCondition"></span>
+          </div>
+          <p class="modal-description" id="modalDescription"></p>
+          <div class="modal-buy" id="modalBuy">
+            <div class="paypal-button-container" id="modalPaypalBtn"></div>
+            <a href="tel:+13219483381" class="btn btn-primary btn-full" id="modalContactBtn">Call to Purchase: (321) 948-3381</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
