@@ -199,10 +199,14 @@ function openProductModal(product) {
     galleryThumbs.innerHTML = '';
   }
 
-  // PayPal button
-  const paypalContainer = document.getElementById('modalPaypalBtn');
-  paypalContainer.innerHTML = '';
-  renderModalPayPalButton(product, paypalContainer);
+  // eBay button
+  const ebayBtn = document.getElementById('modalEbayBtn');
+  if (product.ebayUrl) {
+    ebayBtn.href = product.ebayUrl;
+    ebayBtn.style.display = 'block';
+  } else {
+    ebayBtn.style.display = 'none';
+  }
 
   // Show modal
   productModal.classList.add('visible');
@@ -249,48 +253,6 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') setGalleryImage(currentImageIndex < currentImages.length - 1 ? currentImageIndex + 1 : 0);
   }
 });
-
-// ===== PayPal Button =====
-function renderModalPayPalButton(product, container) {
-  if (typeof paypal === 'undefined') {
-    // PayPal SDK not loaded — show only the contact button
-    return;
-  }
-
-  try {
-    paypal.Buttons({
-      style: {
-        layout: 'vertical',
-        color: 'gold',
-        shape: 'rect',
-        label: 'buynow',
-        height: 45,
-        tagline: false
-      },
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{
-            description: product.name,
-            amount: {
-              value: product.price.toFixed(2)
-            }
-          }]
-        });
-      },
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-          alert('Payment complete! Thank you, ' + details.payer.name.given_name + '. We will contact you about pickup or shipping.');
-          closeModal();
-        });
-      },
-      onError: function(err) {
-        console.error('PayPal error:', err);
-      }
-    }).render(container);
-  } catch (e) {
-    // PayPal render failed, contact button still available
-  }
-}
 
 // ===== Category Filters =====
 document.querySelectorAll('.filter-btn').forEach(btn => {

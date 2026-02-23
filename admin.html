@@ -447,6 +447,10 @@
           <textarea id="productImages" rows="3" placeholder="https://example.com/photo1.jpg&#10;https://example.com/photo2.jpg&#10;Add multiple photos, one URL per line"></textarea>
         </div>
         <div class="form-group">
+          <label for="productEbayUrl">eBay Listing URL (optional)</label>
+          <input type="text" id="productEbayUrl" placeholder="https://www.ebay.com/itm/...">
+        </div>
+        <div class="form-group">
           <label for="productDescription">Description</label>
           <textarea id="productDescription" rows="3" required placeholder="Describe the item, specs, what's included..."></textarea>
         </div>
@@ -600,6 +604,7 @@
       document.getElementById('productPrice').value = product.price;
       const images = product.images || (product.image ? [product.image] : []);
       document.getElementById('productImages').value = images.join('\n');
+      document.getElementById('productEbayUrl').value = product.ebayUrl || '';
       document.getElementById('productDescription').value = product.description;
       document.getElementById('productAvailable').value = String(product.available !== false);
       productModal.classList.add('visible');
@@ -624,6 +629,7 @@
         condition: document.getElementById('productCondition').value,
         price: parseFloat(document.getElementById('productPrice').value),
         images: document.getElementById('productImages').value.split('\n').map(s => s.trim()).filter(s => s),
+        ebayUrl: document.getElementById('productEbayUrl').value.trim(),
         description: document.getElementById('productDescription').value,
         available: document.getElementById('productAvailable').value === 'true'
       };

@@ -439,12 +439,22 @@
   gap: 12px;
 }
 
-.modal-buy .paypal-button-container {
-  min-height: 50px;
-}
-
 .modal-buy .btn {
   text-align: center;
+}
+
+.btn-ebay {
+  background: #0064d2;
+  color: #fff;
+  border-color: #0064d2;
+}
+
+.btn-ebay:hover {
+  background: #004fb4;
+  border-color: #004fb4;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  color: #fff;
 }
 
 /* ===== Responsive ===== */
